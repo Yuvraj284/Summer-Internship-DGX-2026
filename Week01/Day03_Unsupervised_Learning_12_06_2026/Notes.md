@@ -165,6 +165,138 @@ DBSCAN is particularly effective at identifying noise points.
 
 ---
 
+# Principal Component Analysis (PCA)
+
+As datasets grow larger, the number of features or dimensions also increases. High-dimensional data can be difficult to visualize, analyze, and process efficiently. Principal Component Analysis (PCA) is a dimensionality reduction technique used to address this problem.
+
+PCA transforms the original features into a new set of variables called Principal Components. These components are created in such a way that they capture the maximum possible information (variance) present in the data.
+
+The first principal component captures the highest variance, the second principal component captures the next highest variance, and so on.
+
+### Why PCA is Used
+
+* Reduces the number of features in a dataset.
+* Helps visualize high-dimensional data.
+* Removes redundancy among correlated features.
+* Improves computational efficiency.
+* Helps in exploratory data analysis.
+
+### Example
+
+Consider a dataset containing 9 different features related to countries such as income, GDP, life expectancy, exports, and health expenditure.
+
+PCA can reduce these 9 features to 2 or 3 principal components while preserving most of the important information, making visualization easier.
+
+### Advantages
+
+* Reduces dimensionality effectively.
+* Improves visualization.
+* Helps reduce noise and redundancy.
+
+### Limitations
+
+* Reduced features are harder to interpret.
+* Some information is always lost during dimensionality reduction.
+
+---
+
+# t-SNE (t-Distributed Stochastic Neighbor Embedding)
+
+t-SNE is a non-linear dimensionality reduction technique mainly used for data visualization.
+
+Like PCA, t-SNE reduces high-dimensional data to two or three dimensions. However, instead of preserving overall variance, it focuses on preserving the relationships between nearby data points.
+
+This often produces clearer visual clusters, making it easier to identify groups within the data.
+
+### Why t-SNE is Used
+
+* Visualizing high-dimensional datasets.
+* Understanding hidden patterns in data.
+* Exploring clusters before applying machine learning algorithms.
+
+### PCA vs t-SNE
+
+| PCA                          | t-SNE                         |
+| ---------------------------- | ----------------------------- |
+| Linear technique             | Non-linear technique          |
+| Faster computation           | Slower computation            |
+| Preserves variance           | Preserves local relationships |
+| Useful for feature reduction | Mainly used for visualization |
+
+### Advantages
+
+* Produces visually meaningful clusters.
+* Excellent for exploratory analysis.
+* Helps identify hidden structures in data.
+
+### Limitations
+
+* Computationally expensive.
+* Results may vary depending on parameter settings.
+* Not ideal for feature reduction in predictive models.
+
+---
+
+# Anomaly Detection
+
+Anomaly Detection is the process of identifying observations that significantly differ from the majority of the data.
+
+These unusual observations are called anomalies or outliers.
+
+Anomaly Detection is widely used in real-world applications such as:
+
+* Fraud detection in banking systems.
+* Network intrusion detection.
+* Medical diagnosis.
+* Manufacturing defect detection.
+
+### Example
+
+If the average customer transaction amount is between ₹500 and ₹5000, a transaction worth ₹5,00,000 may be considered an anomaly and investigated further.
+
+### Importance
+
+* Helps identify suspicious activities.
+* Improves system security.
+* Detects rare but important events.
+
+---
+
+# Customer Segmentation
+
+Customer Segmentation is the process of dividing customers into groups based on similar characteristics or behaviors.
+
+Businesses use customer segmentation to understand their customers better and provide personalized services.
+
+Common factors used for segmentation include:
+
+* Age
+* Income
+* Purchase History
+* Spending Habits
+* Location
+
+### Example
+
+Using clustering algorithms, a shopping company may divide customers into:
+
+* High-Spending Customers
+* Medium-Spending Customers
+* Low-Spending Customers
+
+This allows businesses to design targeted marketing strategies for each group.
+
+### Benefits of Customer Segmentation
+
+* Better customer understanding.
+* Improved marketing campaigns.
+* Personalized recommendations.
+* Increased customer satisfaction and sales.
+
+Customer Segmentation is one of the most important practical applications of Unsupervised Learning and Clustering techniques.
+
+---
+
 # Comparison of Clustering Algorithms
 
 | Feature                            | K-Means | Hierarchical | DBSCAN    |
@@ -182,4 +314,6 @@ DBSCAN is particularly effective at identifying noise points.
 
 Unsupervised Learning focuses on discovering hidden structures and patterns in data without using labeled outputs. Clustering is one of the most important applications of Unsupervised Learning.
 
-K-Means, Hierarchical Clustering, and DBSCAN are three widely used clustering algorithms, each having its own strengths and limitations. Understanding these algorithms helps in organizing data, identifying patterns, and performing exploratory analysis on real-world datasets.
+K-Means, Hierarchical Clustering, and DBSCAN are widely used clustering algorithms, while PCA and t-SNE help visualize and analyze high-dimensional data. Anomaly Detection helps identify unusual observations, and Customer Segmentation demonstrates a practical business application of clustering techniques.
+
+Together, these concepts form an important foundation for Exploratory Data Analysis (EDA), Machine Learning, and Data Science.
