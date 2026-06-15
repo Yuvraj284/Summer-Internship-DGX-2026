@@ -2,7 +2,7 @@
 
 This folder contains reference material, practice notebooks, and learning resources used during the Summer Internship DGX 2026.
 
-The contents of this folder were studied to understand machine learning concepts before implementing the assigned algorithms and projects.
+The contents of this folder were studied to understand Machine Learning and Deep Learning concepts before implementing the assigned algorithms and projects.
 
 ## Contents
 
@@ -28,8 +28,27 @@ Topics Covered:
 * Confusion Matrix
 * Classification Report
 
-Additional books and study resources were consulted during the internship for theoretical understanding of machine learning concepts.
+### CNN with Dropout and Data Augmentation on CIFAR-10
+
+Reference notebook demonstrating the implementation of Convolutional Neural Networks (CNNs) on the CIFAR-10 image dataset.
+
+Topics Covered:
+
+* Convolutional Neural Networks (CNN)
+* CIFAR-10 Dataset
+* Convolution Layers
+* Pooling Layers
+* Dropout Regularization
+* Data Augmentation
+* Image Classification
+* Model Training and Evaluation
+
+This notebook was studied to understand practical Deep Learning techniques used to improve model performance and reduce overfitting in image classification tasks.
+
+Additional study resources and reference materials were consulted during the internship for theoretical understanding of Machine Learning and Deep Learning concepts.
 
 ## Purpose
 
 The purpose of this folder is to maintain supplementary learning material and reference implementations that support the practical assignments completed during the internship.
+
+These resources helped strengthen conceptual understanding and provided additional examples beyond the daily internship activities.
